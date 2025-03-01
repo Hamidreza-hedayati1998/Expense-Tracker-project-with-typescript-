@@ -1,0 +1,60 @@
+* { box-sizing: border-box;}
+body{
+    background: #487eb0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search { 
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search :hover>.sarch-input{
+    width: 400px;
+}
+
+
+.sarch-input {
+    background: transparent;
+    width: 0;
+    color: #487eb0;
+   font-size: 1em;
+   border: none;
+   outline: none;
+   transition: .8s;
+   transition-delay: .2s;
+}
+.search .search-btn .fas{
+    color: #9c88ff;
+}
+.search .search-btn .fas:hover{
+    color: #273c75;
+}
+
+
+
+@keyframes hoverShake {
+    0% {transform: skew(0deg,0deg);}
+    25% {transform: skew(5deg, 5deg);}
+    75% {transform: skew(-5deg, -5deg);}
+    100% {transform: skew(0deg,0deg);}
+}
+  
+  .search:hover{
+    animation: hoverShake 0.15s linear 2;
+  }
+
+.sarch-input:focus {
+    width: 370px;
+}
