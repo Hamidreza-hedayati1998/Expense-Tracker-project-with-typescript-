@@ -1,0 +1,40 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .Card{
+        background: linear-gradient(90deg, #3494E6 9%, #EC6EAD 86%);
+        padding: 2rem;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        h1{
+            font-size: 25px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        p{
+            padding: 5px;
+            font-size: 15px;
+            color: #fff;
+        }
+        @media (min-width:601px ) and (max-width: 768px) {
+            width: 400px;
+            height: auto;
+            border-radius: 0.75rem;
+          }
+          @media (min-width: 769px ) and (max-width: 1024px) {
+            width: 550px;
+            height: auto;
+            border-radius: 0.75rem;
+          }
+          @media (min-width:1025px )  {
+            width: 750px;
+            height: auto;
+            border-radius: 0.75rem;
+          }
+    }
+}
