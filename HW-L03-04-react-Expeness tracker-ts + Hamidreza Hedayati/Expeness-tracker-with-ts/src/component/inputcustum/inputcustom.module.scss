@@ -1,0 +1,20 @@
+.inputwrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem; 
+  
+    label {
+      color: white;
+      font-size: 1.125rem; 
+    }
+  
+    input {
+      background-color: transparent;
+      width: 200px;
+      height: 2rem; 
+      outline: none;
+      border: 1px solid #fff;
+      padding: 0.75rem 1rem; 
+    }
+  }
+  

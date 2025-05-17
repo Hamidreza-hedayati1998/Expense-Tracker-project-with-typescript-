@@ -1,0 +1,13 @@
+{
+  "files": [],
+  
+    "compilerOptions": {
+      "typeRoots": ["node_modules/@types"],
+      "types": ["node"]
+    },
+  
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
